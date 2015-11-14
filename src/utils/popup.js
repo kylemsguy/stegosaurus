@@ -16,10 +16,34 @@ function loadCredentials(){
 }
 
 function loadMessageThreads(){
-	if(!(username && password))
+	if(!(username && password)){
+		console.log("Username or Password not set.");
 		return false;
+	}
+
 	Stegosaurus.login(username, password);
+
+	enableSpinner();
+
 	return true;
+}
+
+function enableSpinner(){
+	$("#loginform").hide("fast", function(){
+		console.log("form hidden");
+		$("#loading").show("fast", function(){
+			console.log("spinner shown");
+		})
+	})
+}
+
+function disableSpinner(){
+	$("#loading").hide("fast", function(){
+		console.log("spinner hidden");
+		$("#loginform").show("fast", function(){
+			console.log("form shown");
+		})
+	})
 }
 
 function clearHeader(){
