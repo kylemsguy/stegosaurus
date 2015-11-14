@@ -1,0 +1,2 @@
+#stegosaurus
+Steganographic chat client
