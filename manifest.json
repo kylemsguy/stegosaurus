@@ -16,7 +16,7 @@
         "https://*.facebook.com/"
       ],
       "js": [
-        "jquery-2.1.4.min.js",
+        "utils/jquery-2.1.4.min.js",
         "content.js"
       ]
     }
