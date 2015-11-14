@@ -16,34 +16,51 @@ function loadCredentials(){
 }
 
 function loadMessageThreads(){
-	if(!(username && password)){
-		console.log("Username or Password not set.");
-		return false;
-	}
-
-	Stegosaurus.login(username, password);
-
-	enableSpinner();
 
 	return true;
+}
+
+function setError(str){
+	// using alert because lazy
+	alert(str);
+}
+
+function doLogin(){
+	if(!(username && password)){
+		setError("You need to enter both a username and password.");
+		return console.log("Username or Password not set.");
+	}
+
+	FBAPI.do_login(username, password, function(success){
+		if(success)
+			loadMessageThreads();
+		else{
+			disableSpinner();
+			setError("Login failed. Please check your username and password.");
+		}
+	});
+
+	enableSpinner();
 }
 
 function enableSpinner(){
 	$("#loginform").hide("fast", function(){
 		console.log("form hidden");
-		$("#loading").show("fast", function(){
-			console.log("spinner shown");
-		})
-	})
+	});
+
+	$("#loading").show("fast", function(){
+		console.log("spinner shown");
+	});
 }
 
 function disableSpinner(){
 	$("#loading").hide("fast", function(){
 		console.log("spinner hidden");
-		$("#loginform").show("fast", function(){
-			console.log("form shown");
-		})
-	})
+	});
+
+	$("#loginform").show("fast", function(){
+		console.log("form shown");
+	});
 }
 
 function clearHeader(){
@@ -61,9 +78,9 @@ function clearFooter(){
 $(function(){
 	loadCredentials();
 	$("#loginform").submit(function(event){
+		event.preventDefault();
 		username = $("#username").val();
 		password = $("#password").val();
-		loadMessageThreads();
-		event.preventDefault();
+		doLogin();
 	});
 });

@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-js": "browserify src/utils/fbapi.src.js --s module -o tmp/fbapi.js && uglifyjs tmp/fbapi.js --compress --mangle > src/utils/fbapi.min.js"
+    "build-js": "browserify src/utils/fbapi.src.js --s module -o src/utils/fbapi.js && uglifyjs src/utils/fbapi.js --compress --mangle > src/utils/fbapi.min.js"
   },
   "repository": {
     "type": "git",
