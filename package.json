@@ -1,0 +1,31 @@
+{
+  "name": "stegosaurus",
+  "version": "1.0.0",
+  "description": "steganographic chat client for chrome",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "facebook-chat-api": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylemsguy/stegosaurus.git"
+  },
+  "keywords": [
+    "steganography",
+    "chrome",
+    "extension"
+  ],
+  "author": "stegosaurus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylemsguy/stegosaurus/issues"
+  },
+  "homepage": "https://github.com/kylemsguy/stegosaurus#readme"
+}
