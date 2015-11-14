@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steganography example</title>
+  </head>
+  <body>
+    <h1>Steganography example</h1>
+    <p>This example can print the selected JPEG's discrete cosine transform coefficients to the console or encode the image as a JPEG, while applying a customizable coefficient modifification step (in this example we invert the luminosity).</p>
+    <input type="file" id="image-select"></input>
+    <br />
+    <button id="encodeButton">Modify the coefficients</button>
+    <button id="decodeButton">Read the coefficients</button>
+    <br />
+    <img id="encodedImage"></img>
+
+    <script src="utils/jsstegencoder-1.0.js"></script>
+    <script src="utils/jsstegdecoder-1.0.js"></script>
+    <script src="utils/jssteg-1.0.js"></script>
+    <script src="example.js"></script>
+  </body>
+</html>

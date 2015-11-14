@@ -7,11 +7,15 @@
     "test": "test"
   },
   "dependencies": {
-    "facebook-chat-api": "^1.0.3"
+    "facebook-chat-api": "kylemsguy/facebook-chat-api"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "latest",
+    "uglify-js": "latest"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify src/content.src.js --s module -o content.js && uglifyjs content.js --compress --mangle > src/content.min.js"
   },
   "repository": {
     "type": "git",

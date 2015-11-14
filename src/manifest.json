@@ -17,12 +17,16 @@
       ],
       "js": [
         "utils/jquery-2.1.4.min.js",
-        "content.js"
+        "content.min.js"
       ]
     }
   ],
   // facebook only for PoC
-  "permissions": ["http://*.facebook.com/", "https://*.facebook.com/"],
+  "permissions": [
+    "http://*.facebook.com/",
+    "https://*.facebook.com/",
+    "storage"
+    ],
   "browser_action": {
     "default_title": "",
     "default_icon": "icon_19.png",
