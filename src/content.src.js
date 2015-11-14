@@ -19,6 +19,7 @@ function login(username, password){
 	login({email: username, password: password}, 
 		function callback(err, api){
 			if(err) return console.error(err);
+			console.log("Successful login.");
 
 		})
 }

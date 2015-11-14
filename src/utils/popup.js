@@ -10,18 +10,28 @@ function loadCredentials(){
 		}
 		username = items.username;
 		password = items.password;
-		loadMessages();
+		loadMessageThreads();
 		return true;
 	});
 }
 
-function loadMessages(){
-	return false;
+function loadMessageThreads(){
+	if(!(username && password))
+		return false;
+	Stegosaurus.login(username, password);
+	return true;
 }
 
-function loadMessagesPage(){
+function clearHeader(){
+	$("#header").empty();
+}
+
+function clearBody(){
 	$("#body").empty();
-	$("#body").html("MESSAGES GO HERE!");
+}
+
+function clearFooter(){
+	$("#footer").empty();
 }
 
 $(function(){
@@ -29,7 +39,7 @@ $(function(){
 	$("#loginform").submit(function(event){
 		username = $("#username").val();
 		password = $("#password").val();
-		loadMessages();
+		loadMessageThreads();
 		event.preventDefault();
 	});
 });
