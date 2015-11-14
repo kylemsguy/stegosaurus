@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Stegosaurus",
+  "version": "0.1",
+  "description": "Hides information in plain sight",
+  "icons": { "128": "icon_128.png" },
+  "background": {
+    "persistent": false,
+    "scripts": ["bg.js"]
+  },
+  // scripts that run in context of web page
+  "content_scripts": {
+    {
+      "matches": [
+        "http://*.facebook.com/",
+        "https://*.facebook.com/"
+      ]
+    },
+  // facebook only for PoC
+  "permissions": ["http://*.facebook.com/", "https://*.facebook.com/"],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "icon_19.png",
+    "default_popup": "popup.html"
+  }
+}
