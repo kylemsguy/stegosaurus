@@ -1,22 +1,195 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Stegosaurus!</title>
-<script type="text/javascript" src="utils/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="utils/fbapi.js"></script>
-<script type="text/javascript" src="utils/popup.js"></script>
-</head>
-<body>
-<div id="header"><h1>Stegosaurus!</h1></div>
-<div id="body">
-	<form id="loginform" name="stegotest">
-		Please login:<br>
-		Username: <input type="text" name="username" id="username"><br>
-		Password: <input type="password" name="password" id="password"><br>
-		<input type="submit" value="Submit">
-	</form>
-	<div id="loading" style="display: none;"><h1>Loading...</h1></div>
-</div>
-<div id="footer"></div>
-</body>
+  <head>
+    <title>stegosaurus</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script src="popup.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+    <style type="text/css">
+
+    html,
+    body {
+       height:600px;
+       width: 400px;
+       overflow-x: hidden;
+       overflow-y: auto;
+    }
+    <style type="text/css">
+   a:link {color: black;}      /* unvisited link */
+   a:visited {color: black;}   /* visited link */
+   a:hover {color: black;}     /* mouse over link */
+   a:active {color: black;}    /* selected link */
+   </style>
+    </style>
+  </head>
+  <body>
+    <nav id="topBar" class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header" style="display: inline;">
+        <div class="row">
+          <div class="col-xs-1">
+            <img id="logo" src="whiteicon-04.png" alt="" />
+          </div>
+         <div class="col-xs-9">
+           <h2 id="Title">stegosaurus</h2>
+         </div>
+         <div class="col-xs-1">
+          <span id="menu-icons" class="fa fa-user" aria-hidden="true"></span>
+         </div>
+         <div class="col-xs-1">
+          <span id="menu-icons" class="fa fa-cog" aria-hidden="true"></span>
+         </div>
+
+
+        </div>
+      </div>
+      </div>
+    </nav>
+    <h2>heha</h2>
+    <!-- +++++++++++++++++++++++++++++++++++++++++ -->
+    <a id="linksMess" href="messages.html" style="border: 0px;">
+    <div class="row" style="border: 0px;">
+      <div id="linkMess"class="col-xs-3" style="border: 0px;">
+        <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
+      </div>
+      <div class="col-xs-9" style="border: 0px;">
+        <div class="row" style="border: 0px;">
+            <h4 class="participantName">Takashi Wickes
+              <span id="unreadMessage" class="badge">
+
+                  <span id="messagesIcon" class=" fa fa-comments" aria-hidden="true">
+                  </span>
+                  <p style="display: inline">10</p>
+              </span>
+              </h4>
+        </div>
+        <div id="messageSnippet" class="row" style="border: 0px;">
+          <p>Here is the message snippet</p>
+        </div>
+        <div id="timeStamp" class="row">
+          <p> <span id="clockIcon" class="fa fa-clock-o" aria-hidden="true"></span>10:00pm</p>
+        </div>
+      </div>
+
+    </div>
+    <hr width="92%">
+  </a>
+    <!-- +++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+            <h4 class="participantName">Takashi Wickes
+              <span id="unreadMessage" class="badge">
+
+                  <span id="messagesIcon" class=" fa fa-comments" aria-hidden="true">
+                  </span>
+                  <p style="display: inline">10</p>
+              </span>
+              </h4>
+        </div>
+        <div id="messageSnippet" class="row">
+          <p>Here is the message snippet</p>
+        </div>
+        <div id="timeStamp" class="row">
+          <p> <span id="clockIcon" class="fa fa-clock-o" aria-hidden="true"></span>10:00pm</p>
+        </div>
+      </div>
+
+    </div>
+    <hr width="92%">
+    <!-- +++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+            <h4 class="participantName">Takashi Wickes
+              <span id="unreadMessage" class="badge">
+
+                  <span id="messagesIcon" class=" fa fa-comments" aria-hidden="true">
+                  </span>
+                  <p style="display: inline">10</p>
+              </span>
+              </h4>
+        </div>
+        <div id="messageSnippet" class="row">
+          <p>Here is the message snippet</p>
+        </div>
+        <div id="timeStamp" class="row">
+          <p> <span id="clockIcon" class="fa fa-clock-o" aria-hidden="true"></span>10:00pm</p>
+        </div>
+      </div>
+
+    </div>
+    <hr width="92%">
+    <!-- +++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+            <h4 class="participantName">Takashi Wickes
+              <span id="unreadMessage" class="badge">
+
+                  <span id="messagesIcon" class=" fa fa-comments" aria-hidden="true">
+                  </span>
+                  <p style="display: inline">10</p>
+              </span>
+              </h4>
+        </div>
+        <div id="messageSnippet" class="row">
+          <p>Here is the message snippet</p>
+        </div>
+        <div id="timeStamp" class="row">
+          <p> <span id="clockIcon" class="fa fa-clock-o" aria-hidden="true"></span>10:00pm</p>
+        </div>
+      </div>
+
+    </div>
+    <hr width="92%">
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+            <h4 class="participantName">Takashi Wickes
+              <span id="unreadMessage" class="badge">
+
+                  <span id="messagesIcon" class=" fa fa-comments" aria-hidden="true">
+                  </span>
+                  <p style="display: inline">10</p>
+              </span>
+              </h4>
+        </div>
+        <div id="messageSnippet" class="row">
+          <p>Here is the message snippet</p>
+        </div>
+        <div id="timeStamp" class="row">
+          <p> <span id="clockIcon" class="fa fa-clock-o" aria-hidden="true"></span>10:00pm</p>
+        </div>
+      </div>
+
+    </div>
+    <hr width="92%">
+
+  </body>
 </html>
