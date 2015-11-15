@@ -20,6 +20,28 @@
   box-shadow: -7px -97px 0px 99px rgba(0,0,0,0.22);
 }
 
+#topBarText {
+  margin-top: -20px;
+}
+
+#bottomBar {
+  background-color: #FFD188;
+  height: 30px;
+}
+
+#inputForm {
+  width: 88%;
+  color: white;
+  border: 0px;
+  box-shadow: none;
+}
+
+#send_button {
+  color: #5ED174;
+  border: 0px;
+}
+
+
 #menu-icons {
   font-size: 20px;
   margin-top: -20px;
@@ -33,7 +55,7 @@
   height: 76px;
   width: 76px;
   border-radius: 50%;
-  margin: 0px 0px 0px 11px;
+  margin: 0px 0px 0px 7px;
 }
 
 /*.row {
@@ -47,9 +69,31 @@
 }
 
 #messageSnippet {
+  width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;'
   color: gray;
   margin-left: -9px;
-  margin: 2px 0 8px -9px;
+  font-size: 12px;
+  margin: 2px 0 10px -16px;
+  padding: 10px 10px 1px 10px;
+  border: 1px solid #5ED174;
+  border-radius: 1em;
+}
+
+#userMessage {
+  display: block;
+  float: right;
+  clear: left;
+  overflow: auto;
+  width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;'
+  color: gray;
+  margin: 2px -16px 10px 0px;
+  text-align: right;
+  padding: 6px;
+  font-size: 12px;
+  color: white;
+  padding: 10px 10px 1px 10px;
+  border-radius: 1em;
+  background-color: #5ED174;
 }
 
 #clockIcon{
@@ -63,7 +107,6 @@
 hr {
     height: 12px;
     border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
 #timeStamp {
@@ -71,6 +114,20 @@ hr {
   /*margin-left: 5px;*/
   margin-top: -16px;
   font-size: 12px;
+}
+
+#timeStampsm {
+
+  position: relative;
+  top: 50%;
+  transform: translateY(80%);
+  color: lightgray;
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
+#userResponse {
+  margin-left: -12px;
 }
 
 #unreadCount {
