@@ -11,7 +11,7 @@ function sendMsg(){
     var clientmsg = $("#inputForm").val();
     var wcc = new WolframCloudCall();
 
-	wcc.insertMessage(image, message, 
+	wcc.insertMessage(getRandomImage(), message, 
 		function(result) { 
 			$.post("http://192.241.249.103/send.php", {text: result, name: user1, type: "img"});              
 		    $("#inputForm").attr("value", "");

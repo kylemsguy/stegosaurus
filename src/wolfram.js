@@ -56,7 +56,7 @@ p._auxCall = function(url, args, callback) {
 	}
 };
 
-#formerly called p.call
+//formerly called p.call
 p.insertMessage = function(image, message, callback) {
 	var url = "http://www.wolframcloud.com/objects/user-b156354d-c537-4c00-91ef-31bb69876c20/insertion";
 	var args = {image: image, message: message};
@@ -66,7 +66,6 @@ p.insertMessage = function(image, message, callback) {
 	};
 	this._auxCall(url, args, callbackWrapper);
 };
-})();
 
 p.extractImage = function(image, callback) {
 	var url = "http://www.wolframcloud.com/objects/user-b156354d-c537-4c00-91ef-31bb69876c20/extraction";
@@ -77,4 +76,5 @@ p.extractImage = function(image, callback) {
 	};
 	this._auxCall(url, args, callbackWrapper);
 };
+
 })();
