@@ -4,9 +4,8 @@ $dbconn = pg_connect("host=localhost dbname=postgres user=postgres password=hack
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$sender = $_POST['name'];
 	$type = $_POST['type'];
+	$to_insert = $_POST['text'];
 	if($type == "text"){
-		$to_insert = $_POST['text'];
-		echo("Sent text: ".$to_insert);
 		$result = pg_prepare($dbconn, "addmsg", "INSERT INTO message (sender, sent, iora, data) VALUES ($1, 'now', false, $2)");
 	} else if($type == "img"){
 		// base64
