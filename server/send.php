@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		die();
 	}
 
-	$args = array($sender, to_insert);
+	$args = array($sender, $to_insert);
 
 	$result = pg_execute($dbconn, "addmsg", $args);
 
