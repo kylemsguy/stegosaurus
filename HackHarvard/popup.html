@@ -18,9 +18,12 @@
 
     <style type="text/css">
 
+    html,
     body {
-       max-height: 300px;
-       width: 400px
+       height:600px;
+       width: 400px;
+       overflow-x: hidden;
+       overflow-y: auto;
     }
     <style type="text/css">
    a:link {color: black;}      /* unvisited link */
@@ -55,13 +58,13 @@
     </nav>
     <h2>heha</h2>
     <!-- +++++++++++++++++++++++++++++++++++++++++ -->
-    <a href="messages.html">
-    <div class="row">
-      <div class="col-xs-3">
+    <a id="linksMess" href="messages.html" style="border: 0px;">
+    <div class="row" style="border: 0px;">
+      <div id="linkMess"class="col-xs-3" style="border: 0px;">
         <img src="profile_pic.jpg" class="center-cropped" alt="Cinque Terre">
       </div>
-      <div class="col-xs-9">
-        <div class="row">
+      <div class="col-xs-9" style="border: 0px;">
+        <div class="row" style="border: 0px;">
             <h4 class="participantName">Takashi Wickes
               <span id="unreadMessage" class="badge">
 
@@ -71,7 +74,7 @@
               </span>
               </h4>
         </div>
-        <div id="messageSnippet" class="row">
+        <div id="messageSnippet" class="row" style="border: 0px;">
           <p>Here is the message snippet</p>
         </div>
         <div id="timeStamp" class="row">
