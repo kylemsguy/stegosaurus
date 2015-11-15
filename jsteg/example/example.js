@@ -15,13 +15,13 @@ var getBytes = function(message) {
   var bytes =[];
   for (var i = 0; i < message.length; i++)
   {
-    var b = message.charCodeAt(i).toString(2);
+    var b = parseInt(message.charCodeAt(i).toString(2));
     console.log(b);
     
     for (var j = 0; j < 8; j++)
     {
       bytes.push(0x1 & b)
-      parseInt(b) >> 1;
+      b = parseInt(b) >> 1;
     }
   }
   console.log(bytes);
