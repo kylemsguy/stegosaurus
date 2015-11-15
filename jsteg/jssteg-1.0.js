@@ -57,7 +57,7 @@ var jsSteg = (function() {
   var reEncodeWithModifications = function(url, coefficientModifier, callback) {
     getImageDataFromURL(url, function(data) {
       var encoder = new JPEGEncoder();
-      var jpegURI = encoder.encodeAndModifyCoefficients(data, 75, modifyCoefficients);
+      var jpegURI = encoder.encodeAndModifyCoefficients(data, 75, coefficientModifier);
       callback(jpegURI);
     });
   }  
