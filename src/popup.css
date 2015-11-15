@@ -128,6 +128,15 @@ color: #E0B373 !important;
   margin: 0px 0px 0px 7px;
 }
 
+.decodedMessages {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 250px;
+  width: 100px;
+  border-radius: 1em;
+  margin: 0px 0px 10px 0px;
+}
+
 /*.row {
   background-color: gray;
 }*/
