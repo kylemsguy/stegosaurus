@@ -11,12 +11,14 @@ function sendMsg(){
     var clientmsg = $("#inputForm").val();
     var wcc = new WolframCloudCall();
 
-	wcc.insertMessage(getRandomImage(), message, 
+    $.get(getRandomImage(), function(image){
+    	wcc.insertMessage(image, clientmsg, 
 		function(result) { 
 			$.post("http://192.241.249.103/send.php", {text: result, name: user1, type: "img"});              
 		    $("#inputForm").attr("value", "");
 		    getChatLog();
 		});
+    });
     return false;
 }
 
@@ -48,8 +50,8 @@ function getChatLog(){
 				decodeQueue.push(currentObj['data']);
 				var outputData = '<a href="#" class="clickable" id="' + i + '"><img src="data:image/jpg;base64,' + currentObj['data'] + '" class="decodedMessages" alt="hey" style="width: 100px; height: 150px; margin-top: 0px;"></a>';
 			}
-			console.log("sender",currentObj['sender']);
-			console.log(outputData);
+			//console.log("sender",currentObj['sender']);
+			//console.log(outputData);
 			if(currentObj['sender'] == user1){
 				// generate user1 stuff
 				$.ajax({
