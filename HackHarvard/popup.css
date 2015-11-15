@@ -20,6 +20,28 @@
   box-shadow: -7px -97px 0px 99px rgba(0,0,0,0.22);
 }
 
+#topBarText {
+  margin-top: -20px;
+}
+
+#bottomBar {
+  background-color: #FFD188;
+  height: 30px;
+}
+
+#inputForm {
+  width: 88%;
+  color: white;
+  border: 0px;
+  box-shadow: none;
+}
+
+#send_button {
+  color: #5ED174;
+  border: 0px;
+}
+
+
 #menu-icons {
   font-size: 20px;
   margin-top: -20px;
