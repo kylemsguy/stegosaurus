@@ -3,12 +3,26 @@
   margin-top: -6px;
 }
 
+#Title:hover {
+  color: light gray;
+}
+#linkMess { outline: none;
+  outline-style: none;
+border: 0px;
+box-shadow: none;}
+
 #logo {
   position: absolute;
   top:-9px;
   left:9px;
   width: 30px;
   height: 30px;
+}
+
+a{
+  color: white !important;
+  border: none !important;
+  outline: none !important;
 }
 
 #topBar {
@@ -29,18 +43,74 @@
   height: 30px;
 }
 
+input::-webkit-input-placeholder {
+color: #E0B373 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #E0B373 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #E0B373!important;
+}
+
+input:-ms-input-placeholder {
+color: #E0B373 !important;
+}
+
 #inputForm {
+  background-color: #FFD188;
   width: 88%;
-  color: white;
+  color: #E29A33;
   border: 0px;
   box-shadow: none;
+  border-bottom: 2px solid #E0B373;
 }
 
-#send_button {
-  color: #5ED174;
+.btn-send {
+  background-color: #FFD188;
+  text-align: left;
+  width: 31px;
+  border-radius: 4px;
+  color: #D6A55F;
   border: 0px;
+  margin-left: 6px;
+  padding-left: 8px;
+  padding-bottom: 6px;
+  margin-top: -1px;
+  outline: none;
+  border-bottom: 2px solid #E0B373;
 }
 
+.btn-send:hover {
+  background-color: #FFD188;
+  border-radius: 4px;
+  color: #E29A33;
+  border: 0px;
+  margin-left: 6px;
+  padding-right: -90px;
+  padding-left: 8px;
+
+  padding-bottom: 6px;
+  margin-top: -1px;
+  border-bottom: 2px solid #E29A33;
+}
+
+.btn-send:active {
+  background-color: #FFD188;
+  text-align: left;
+  width: 31px;
+  border-radius: 4px;
+  color: #E29A33;
+  border: 0px;
+  margin-left: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  margin-top: -1px;
+  border: 2px solid #E29A33;
+  box-shadow: none;
+}
 
 #menu-icons {
   font-size: 20px;
@@ -68,7 +138,7 @@
   color: #67C679;
 }
 
-#messageSnippet {
+#messageBody {
   width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;'
   color: gray;
   margin-left: -9px;
@@ -77,6 +147,12 @@
   padding: 10px 10px 1px 10px;
   border: 1px solid #5ED174;
   border-radius: 1em;
+}
+
+#messageSnippet {
+  color: gray;
+  margin-left: -9px;
+  margin: 2px 0 8px -9px;
 }
 
 #userMessage {
