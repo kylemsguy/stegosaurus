@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>stego</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="utils/jquery-2.1.4.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="utils/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="wolfram.js"></script>
+
+    <script type="text/javascript" src="messages-steg.js"></script>
+
+    <style type="text/css">
+
+    html,
+    body {
+       height:600px;
+       width: 400px;
+       overflow-x: hidden;
+       overflow-y: auto;
+    }
+    </style>
+  </head>
+  <body>
+    <nav id="topBar" class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header" style="display: inline;">
+        <div id="topBarText" class="row">
+          <a href="popup.html">
+          <div class="col-xs-1">
+            <img id="logo" src="whiteicon-04.png" alt="" />
+          </div>
+         <div class="col-xs-8">
+           <h2 id="Title">stegosaurus</h2>
+         </div>
+        </a>
+         <div class="col-xs-1">
+          <span id="menu-icons" class="fa fa-lock" aria-hidden="true"></span>
+         </div>
+         <div class="col-xs-1">
+          <span id="menu-icons" class="fa fa-user" aria-hidden="true"></span>
+         </div>
+         <div class="col-xs-1">
+          <span id="menu-icons" class="fa fa-cog" aria-hidden="true"></span>
+         </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <h2>heha</h2>
+
+    <nav id="bottomBar" class="navbar navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-footer" style="display: inline;">
+          <form style="margin-top: -6px;" class="navbar-form navbar-left" role="search">
+            <div class="form-group" style="display: inline;">
+              <input style="display: inline;" id="inputForm" type="text" autocomplete="off" class="form-control" placeholder="Type message here...">
+            </div>
+            <button id="send_button" type="submit" class="btn-send"> <i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="msgContainer"></div>
+
+<h2>wumbo</h2>
+</body>
