@@ -1,0 +1,94 @@
+#Title{
+  font-size: 20px;
+  margin-top: -6px;
+}
+
+#logo {
+  position: absolute;
+  top:-9px;
+  left:9px;
+  width: 30px;
+  height: 30px;
+}
+
+#topBar {
+  background-color: #5ED174;
+  height: 50px;
+  color: white;
+  -webkit-box-shadow: -7px -97px 0px 99px rgba(0,0,0,0.22);
+  -moz-box-shadow: -7px -97px 0px 99px rgba(0,0,0,0.22);
+  box-shadow: -7px -97px 0px 99px rgba(0,0,0,0.22);
+}
+
+#menu-icons {
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: -14px;
+}
+
+.center-cropped {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 76px;
+  width: 76px;
+  border-radius: 50%;
+  margin: 0px 0px 0px 11px;
+}
+
+/*.row {
+  background-color: gray;
+}*/
+
+.participantName {
+  /*margin-left: 10px;*/
+  margin: 12px 10px 0px 2px;
+  color: #67C679;
+}
+
+#messageSnippet {
+  color: gray;
+  margin-left: -9px;
+  margin: 2px 0 8px -9px;
+}
+
+#clockIcon{
+  margin: 0 5px 0 5px;
+}
+
+#messagesIcon{
+  margin: 0px 2px 2px 1px;
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#timeStamp {
+  color: lightgray;
+  /*margin-left: 5px;*/
+  margin-top: -16px;
+  font-size: 12px;
+}
+
+#unreadCount {
+  margin-top: 0px;
+}
+
+#unreadMessage {
+  position: absolute;
+  top: 38px;
+  right: 30px;
+  /*margin-left: 10px;*/
+  color: #5ED174;
+  display: inline;
+  text-align: right;
+  margin-top: -10px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #5ED174;
+}
