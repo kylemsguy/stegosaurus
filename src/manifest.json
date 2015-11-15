@@ -8,15 +8,6 @@
     "persistent": false,
     "scripts": ["bg.js"]
   },
-  // scripts that run in context of web page
-  "content_scripts": [
-      "matches": [
-      ],
-      "js": [
-      ]
-    }
-  ],
-  // facebook only for PoC
   "permissions": [
     "storage"
     ],
