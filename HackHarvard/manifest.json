@@ -7,7 +7,7 @@
 
   "browser_action": {
    "default_icon": "logo_character-02.png",
-   "default_popup": "messages.html"
+   "default_popup": "popup.html"
   },
   "permissions": [
    "activeTab"
