@@ -17,18 +17,33 @@ function getChatLog(){
 		var parsedData = json.parse(data);
 		$("#msgContainer").empty();
 		for(var i = 0; i < parsedData.length; i++){
+			var outputData = "";
+			if(parsedData['iora'] == 'f'){
+				outputData = parsedData['data'];
+			} else {
+				// we have an image on our hands
+				outputData = "<img src=data:image/jpg;base64," + parsedData['data'] + "\">";
+			}
 			if(parsedData['sender'] == user1){
 				// generate user1 stuff
 				$.get("templates/message_item_ours.html", function(response){
 					// set attributes
+					var replaced = response.replace("[BODY]", outputData);
+					$("#msgContainer").append(replaced);
 				});
 			} else {
 				// generate user2 stuff
 				$.get("templates/message_item_theirs.html", function(response){
 					// set attributes
+					var replaced = response.replace("[BODY]", outputData);
+					$("#msgContainer").append(replaced);
 				});
 			}
 
 		}
 	});
 }
+
+$(function(){
+	setInterval (loadLog, 2000);
+});
