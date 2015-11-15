@@ -77,6 +77,9 @@ function getChatLog(){
 			}
 
 		}
+		//Auto-scroll	
+		var objDiv = document.getElementById("msgContainer");		
+		objDiv.scrollTop = objDiv.scrollHeight;
 	});
 }
 
