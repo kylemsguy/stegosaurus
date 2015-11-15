@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Stegosaurus",
+  "version": "0.1",
+  "description": "Hides information in plain sight",
+  //"icons": { "128": "icon_128.png" },
+ // "background": {
+//    "persistent": false,
+//    "page": "background.html"
+ // },
+  // facebook only for PoC
+  "permissions": [
+    "storage",
+    "identity",
+//    "tabs",
+//    "background",
+    "https://api.twitter.com/oauth/request_token/*",
+    "https://api.jublo.net/codebird/"
+    ],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "icon_19.png",
+    "default_popup": "popup.html"
+  }
+}

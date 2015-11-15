@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Steganography Test</title>
+<script language="Javascript" src="utils/jquery-2.1.4.min.js"></script>
+<script language="Javascript" src="utils/test.js"></script>
+</head>
+<body>
+<form name="stegotest" onsubmit="event.preventDefault();return validateFormOnSubmit(this);">
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+<input type="submit" value="Submit" onclick="alert("You clicked me!");">
+</form>
+<script>
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+</body>
+</html>
