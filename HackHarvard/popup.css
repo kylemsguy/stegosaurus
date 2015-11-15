@@ -3,12 +3,26 @@
   margin-top: -6px;
 }
 
+#Title:hover {
+  color: light gray;
+}
+#linkMess { outline: none;
+  outline-style: none;
+border: 0px;
+box-shadow: none;}
+
 #logo {
   position: absolute;
   top:-9px;
   left:9px;
   width: 30px;
   height: 30px;
+}
+
+a{
+  color: white !important;
+  border: none !important;
+  outline: none !important;
 }
 
 #topBar {
@@ -124,7 +138,7 @@ color: #E0B373 !important;
   color: #67C679;
 }
 
-#messageSnippet {
+#messageBody {
   width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;'
   color: gray;
   margin-left: -9px;
@@ -133,6 +147,12 @@ color: #E0B373 !important;
   padding: 10px 10px 1px 10px;
   border: 1px solid #5ED174;
   border-radius: 1em;
+}
+
+#messageSnippet {
+  color: gray;
+  margin-left: -9px;
+  margin: 2px 0 8px -9px;
 }
 
 #userMessage {
