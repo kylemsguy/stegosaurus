@@ -1,15 +1,16 @@
 
-var FBAPI = window.FBAPI || {}
-
 var login = require('facebook-chat-api');
 var onlineUsers = [];
 
-function do_login(username, pass, success_callback){
+function do_login(username, password, success_callback){
+	var uname = username;
+	var pass = password;
+
 	var userpassobject = {};
 	userpassobject['email'] = username;
 	userpassobject['password'] = password;
 	//console.log(username,password);
-	login({email: username, password: password}, 
+	login(userpassobject, 
 		function callback(err, api){
 			if(err) {
 				success_callback(false);
@@ -32,7 +33,4 @@ function getOnlineUsers(username, password){
 		});
 }
 
-FBAPI.do_login = do_login;
-FBAPI.onlineUsers = onlineUsers;
-
-window.FBAPI = FBAPI
+module.exports.login = do_login

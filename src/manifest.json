@@ -16,8 +16,8 @@
         "https://*.facebook.com/"
       ],
       "js": [
-        "utils/jquery-2.1.4.min.js",
-        "content.min.js"
+        "utils/jquery-2.1.4.min.js"//,
+        //"utils/fbapi.min.js"
       ]
     }
   ],
