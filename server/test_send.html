@@ -1,0 +1,18 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>test_sending</title>
+</head>
+<body>
+<form action="http://192.241.249.103/send.php" method="post">
+	Name of sender: <input type="text" name="name"><br>
+	Type: <select name="type">
+	<option value="text">Text</option>
+	<option value="img">Image</option>
+	</select><br>
+	Text: (if selected Text) <textarea name="text"></textarea><br>
+	Image file (if selected Image): <input type="file" name="image" accept="image/*"><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>

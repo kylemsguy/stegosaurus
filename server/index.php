@@ -1,6 +1,5 @@
 <?php
-session_start();
-$dbconn = pg_connect("host=localhost dbname=postgres user=webappuser password=foo")
+$dbconn = pg_connect("host=localhost dbname=postgres user=postgres password=hackharvard")
     or die('Could not connect: ' . pg_last_error());
 if($_SERVER['REQUEST_METHOD'] == "GET"){
 		//INSERT INTO message VALUES ('takashi', 'now', 
@@ -10,13 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 		$resultset = array();
 
 		while ($row = pg_fetch_array($result)) {
-			$tmprow = array();
-			$tmprow['id'] = row['id'];
-			$tmprow['sender'] = row['sender'];
-			$tmprow['sent'] = row['sent'];
-			$tmprow['iora'] = row['iora'];
-			$tmprow['data'] = row['data'];
-			$resultset[] = $tmprow;
+			$resultset[] = $row;
       //print_r($row);
     }
 
